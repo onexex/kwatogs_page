@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Kwatogs Molino II | Authentic Filipino Restaurant</title>
+    <meta name="description" content="Affordable Filipino comfort food in Bacoor, Cavite. Open daily 4PM. Dine-in, takeout, and delivery available.">
+    <meta name="keywords" content="Filipino restaurant, Kwatogs, Molino, Bacoor, Cavite, affordable food, silog">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff9f5;
+            color: #2d1b0e;
+            line-height: 1.5;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Buttons & Links */
+        .btn-primary {
+            background: linear-gradient(135deg, #d4451e 0%, #b83a18 100%);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(212, 69, 30, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #c03a16 0%, #a02f10 100%);
+            box-shadow: 0 6px 20px rgba(212, 69, 30, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #d4451e;
+            border: 2px solid #d4451e;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: #d4451e;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #d4451e;
+            border: 2px solid #d4451e;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .btn-outline:hover {
+            background: #d4451e;
+            color: white;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 249, 245, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 16px 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #d4451e, #e07a3a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .logo p {
+            font-size: 0.75rem;
+            color: #8b6b4f;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4a3420;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d4451e;
+        }
+
+        .order-nav-btn {
+            background: #d4451e;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .order-nav-btn:hover {
+            background: #b83a18;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 90vh;
+            background: linear-gradient(135deg, #1a0e06 0%, #2d1b0e 100%), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBmaWxsPSIjZmZkY2I4IiBmaWxsLW9wYWNpdHk9IjAuMDUiIGQ9Ik0wIDBoNDB2NDBIMHoiLz48cGF0aCBkPSJNMjAgMTBsMTAgMTAtMTAgMTAtMTAtMTB6IiBmaWxsPSIjZmZkY2I4IiBmaWxsLW9wYWNpdHk9IjAuMDgiLz48L3N2Zz4=');
+            background-blend-mode: overlay;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 24px;
+            color: white;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(212, 69, 30, 0.2);
+            backdrop-filter: blur(4px);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(212, 69, 30, 0.5);
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .title-main {
+            background: linear-gradient(135deg, #f5a65b, #ff6b35);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #f5a65b;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* Quick Info Bar */
+        .quick-info {
+            background: white;
+            padding: 32px 0;
+            margin-top: -40px;
+            position: relative;
+            z-index: 10;
+            border-radius: 30px 30px 0 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .info-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+            background: #fff9f5;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #fff0e8, #ffe4d8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #d4451e;
+        }
+
+        .info-content h3 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #8b6b4f;
+            margin-bottom: 4px;
+        }
+
+        .info-content p {
+            font-weight: 700;
+            color: #2d1b0e;
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: #fff0e8;
+            color: #d4451e;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #2d1b0e;
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            color: #8b6b4f;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+
+        .menu-categories {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .category-btn {
+            background: transparent;
+            border: 1px solid #e5d5c8;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .category-btn.active {
+            background: #d4451e;
+            color: white;
+            border-color: #d4451e;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            border: 1px solid #f0e4da;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .menu-img {
+            height: 200px;
+            background: linear-gradient(135deg, #fef3ea, #ffe8dc);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+        }
+
+        .menu-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #d4451e;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .menu-info {
+            padding: 20px;
+        }
+
+        .menu-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-info p {
+            color: #8b6b4f;
+            font-size: 0.85rem;
+            margin-bottom: 16px;
+            line-height: 1.4;
+        }
+
+        .price {
+            font-weight: 800;
+            color: #d4451e;
+            font-size: 1.2rem;
+        }
+
+        .add-btn {
+            background: #d4451e;
+            color: white;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.8rem;
+        }
+
+        .add-btn:hover {
+            background: #b83a18;
+        }
+
+        /* Featured Section */
+        .featured {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #fff9f5, #fff3ec);
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .featured-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .featured-card:hover {
+            transform: scale(1.03);
+        }
+
+        .featured-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .featured-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .featured-price {
+            font-weight: 800;
+            color: #d4451e;
+            margin-top: 12px;
+        }
+
+        /* Reviews */
+        .reviews {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .review-card {
+            background: #fff9f5;
+            padding: 28px;
+            border-radius: 24px;
+            border: 1px solid #f0e4da;
+        }
+
+        .stars {
+            color: #ffb800;
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+        }
+
+        .rating-badge {
+            display: inline-block;
+            background: #ffb80020;
+            color: #f5a623;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .review-text {
+            margin: 16px 0;
+            line-height: 1.6;
+            color: #4a3420;
+        }
+
+        .reviewer {
+            font-weight: 700;
+            margin-top: 16px;
+        }
+
+        .reviewer span {
+            font-weight: 400;
+            color: #8b6b4f;
+            font-size: 0.8rem;
+        }
+
+        /* Location Section */
+        .location {
+            padding: 80px 0;
+            background: #fff9f5;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+
+        .location-info {
+            padding-right: 24px;
+        }
+
+        .address {
+            margin: 24px 0;
+            padding: 16px;
+            background: white;
+            border-radius: 16px;
+            border: 1px solid #f0e4da;
+        }
+
+        .address i {
+            width: 30px;
+            color: #d4451e;
+        }
+
+        .hours {
+            margin: 24px 0;
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed #f0e4da;
+        }
+
+        .location-map {
+            background: linear-gradient(135deg, #fef3ea, #ffe8dc);
+            border-radius: 24px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 16px;
+            border: 1px solid #f0e4da;
+        }
+
+        .location-map i {
+            font-size: 3rem;
+            color: #d4451e;
+        }
+
+        /* Online Order Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            max-width: 500px;
+            width: 90%;
+            padding: 32px;
+            border-radius: 32px;
+            text-align: center;
+        }
+
+        .modal-content h2 {
+            margin-bottom: 24px;
+        }
+
+        .order-options {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .order-option {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+            border: 1px solid #f0e4da;
+            border-radius: 16px;
+            text-decoration: none;
+            color: #2d1b0e;
+            transition: all 0.3s;
+        }
+
+        .order-option:hover {
+            border-color: #d4451e;
+            background: #fff9f5;
+        }
+
+        .close-modal {
+            margin-top: 16px;
+            background: none;
+            border: none;
+            color: #8b6b4f;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a0e06;
+            color: #fff9f5;
+            padding: 48px 0 24px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 48px;
+            margin-bottom: 32px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 16px;
+            color: #f5a65b;
+        }
+
+        .footer-col a {
+            display: block;
+            color: #ccb69b;
+            text-decoration: none;
+            margin-bottom: 8px;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: #d4451e;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid #332418;
+            font-size: 0.8rem;
+            color: #8b6b4f;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>KWATOGS</h1>
+                <p>MOLINO II • SINCE 2015</p>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#location">Location</a>
+                <a href="#" class="order-nav-btn" id="orderNavBtn">Order Now 🛵</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">✦ FAMILY-OWNED SINCE 2015 ✦</div>
+            <h1 class="hero-title">
+                <span class="title-main">Kwatogs</span><br>
+                Molino II
+            </h1>
+            <p class="hero-description">
+                Authentic Filipino comfort food made with love and tradition. 
+                Serving Bacoor, Cavite with pride since 2015.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-utensils"></i> Explore Menu
+                </button>
+                <button class="btn-secondary" id="heroOrderBtn">
+                    <i class="fas fa-motorcycle"></i> Order Online
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-label">Customer Reviews</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">₱1-500</span>
+                    <span class="stat-label">Budget/Person</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years Serving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon"><i class="fas fa-clock"></i></div>
+                <div class="info-content">
+                    <h3>OPENING HOURS</h3>
+                    <p>Opens at 4:00 PM<br>Daily</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="info-content">
+                    <h3>CONTACT</h3>
+                    <p>0919 451 6030</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="info-content">
+                    <h3>LOCATION</h3>
+                    <p>Blk 5, Lot 9, Molino Rd,<br>Molino II, Bacoor, Cavite</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon"><i class="fas fa-tag"></i></div>
+                <div class="info-content">
+                    <h3>PRICE RANGE</h3>
+                    <p>₱1 - ₱500 per person</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">✦ OUR SPECIALTIES ✦</div>
+                <h2 class="section-title">Satisfy Your Cravings</h2>
+                <p class="section-subtitle">Affordable Filipino dishes that feel like home</p>
+            </div>
+
+            <div class="menu-categories" id="menuCategories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="silog">Silog Meals</button>
+                <button class="category-btn" data-category="ulam">Ulam</button>
+                <button class="category-btn" data-category="soup">Soups</button>
+                <button class="category-btn" data-category="snacks">Snacks</button>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be loaded via JavaScript -->
+            </div>
+
+            <div style="text-align: center;">
+                <button class="btn-outline" onclick="alert('Full menu available on Facebook! Check our page.')">
+                    View Full Menu on Facebook <i class="fab fa-facebook"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">✦ CUSTOMER FAVORITES ✦</div>
+                <h2 class="section-title">Best Sellers</h2>
+            </div>
+            <div class="featured-grid" id="featuredGrid"></div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">✦ CUSTOMER LOVE ✦</div>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div style="margin-top: 16px;">
+                    <span style="font-size: 2rem; color: #ffb800;">★★★☆☆</span>
+                    <span style="font-size: 1.5rem; font-weight: 800; margin-left: 12px;">3.4</span>
+                    <span style="color: #8b6b4f;"> (40+ reviews)</span>
+                </div>
+            </div>
+            <div class="reviews-grid" id="reviewsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">✦ VISIT US ✦</div>
+                <h2 class="section-title">Find Us Here</h2>
+            </div>
+            <div class="location-grid">
+                <div class="location-info">
+                    <div class="address">
+                        <p><i class="fas fa-map-pin"></i> <strong>📍 Address</strong><br>Blk 5, Lot 9, Molino Rd, Molino II, Bacoor, 4102 Cavite</p>
+                    </div>
+                    <div class="hours">
+                        <h3><i class="fas fa-clock"></i> Opening Hours</h3>
+                        <div class="hours-row"><span>Monday - Sunday</span><span><strong>4:00 PM - 10:00 PM</strong></span></div>
+                        <div class="hours-row"><span>Holidays</span><span>Regular Hours</span></div>
+                    </div>
+                    <div class="address">
+                        <p><i class="fas fa-phone"></i> <strong>📞 Contact</strong><br>0919 451 6030</p>
+                        <p style="margin-top: 12px;"><i class="fab fa-facebook"></i> <strong>Facebook</strong><br>facebook.com/kwatogsmolino</p>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p><strong>CX8F+4Q Bacoor, Cavite</strong></p>
+                    <button class="btn-outline" onclick="window.open('https://maps.google.com/?q=Blk+5+Lot+9+Molino+Rd+Molino+II+Bacoor+Cavite', '_blank')">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>KWATOGS Molino II</h4>
+                    <p>Serving authentic Filipino comfort food with love since 2015.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#location">Location</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="#">Dine-in</a>
+                    <a href="#">Takeout</a>
+                    <a href="#">No-contact Delivery</a>
+                    <a href="#">Parking Available</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Kwatogs Molino II. All rights reserved. | LGBTQ+ friendly establishment</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <h2>🛵 Order Online</h2>
+            <p>Choose your preferred way to order:</p>
+            <div class="order-options">
+                <a href="tel:09194516030" class="order-option">
+                    <i class="fas fa-phone fa-2x" style="color:#d4451e;"></i>
+                    <div>
+                        <strong>Call to Order</strong><br>
+                        0919 451 6030
+                    </div>
+                </a>
+                <a href="#" class="order-option" onclick="alert('Facebook page link: facebook.com/kwatogsmolino'); return false;">
+                    <i class="fab fa-facebook fa-2x" style="color:#1877f2;"></i>
+                    <div>
+                        <strong>Message on Facebook</strong><br>
+                        Send us a message
+                    </div>
+                </a>
+                <div class="order-option" onclick="alert('Visit us at Blk 5, Lot 9, Molino Rd, Molino II, Bacoor, Cavite');">
+                    <i class="fas fa-store fa-2x" style="color:#2ecc71;"></i>
+                    <div>
+                        <strong>Dine-in / Takeout</strong><br>
+                        Walk-in orders welcome
+                    </div>
+                </div>
+            </div>
+            <button class="close-modal" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Menu Data
+        const menuItems = [
+            { name: "Tripsilog", category: "silog", price: "120", description: "Tapa, rice, and fried egg - customer favorite!", badge: "Best Seller", icon: "🥩" },
+            { name: "Tapsilog", category: "silog", price: "95", description: "Beef tapa with garlic rice and egg", badge: "Classic", icon: "🥩" },
+            { name: "Liempo Silog", category: "silog", price: "110", description: "Grilled pork belly with rice and egg", badge: "Popular", icon: "🥓" },
+            { name: "Chicksilog", category: "silog", price: "100", description: "Grilled chicken with rice and egg", badge: "", icon: "🍗" },
+            { name: "Pork Sisig", category: "ulam", price: "150", description: "Sizzling spicy pork sisig", badge: "Crowd Favorite", icon: "🥘" },
+            { name: "Crispy Pata", category: "ulam", price: "350", description: "Deep-fried pork leg crispy and tender", badge: "Family Size", icon: "🍖" },
+            { name: "Lechon Kawali", category: "ulam", price: "180", description: "Crispy fried pork belly", badge: "", icon: "🥩" },
+            { name: "Adobo", category: "ulam", price: "120", description: "Chicken and pork adobo", badge: "", icon: "🍲" },
+            { name: "Sinigang na Baboy", category: "soup", price: "200", description: "Sour tamarind soup with pork", badge: "Comfort Food", icon: "🥣" },
+            { name: "Bulalo", category: "soup", price: "280", description: "Beef marrow stew with vegetables", badge: "", icon: "🍲" },
+            { name: "Lumpiang Shanghai", category: "snacks", price: "100", description: "Spring rolls with dipping sauce", badge: "", icon: "🌯" },
+            { name: "Pancit Canton", category: "snacks", price: "120", description: "Stir-fried noodles with vegetables", badge: "", icon: "🍜" }
+        ];
+
+        const featuredDishes = [
+            { name: "Tripsilog", price: "₱120", description: "The all-time customer favorite!", icon: "🥩⭐" },
+            { name: "Crispy Pata", price: "₱350", description: "Perfect for family sharing", icon: "🍖👨‍👩‍👧‍👦" },
+            { name: "Pork Sisig", price: "₱150", description: "Sizzling and spicy", icon: "🥘🔥" }
+        ];
+
+        const reviewsList = [
+            { name: "Mon Gemana", rating: 5, text: "Sulit yung food, lalo na yung tripsilog! Affordable yung prices may less pa pag may discount card ka :)", date: "11 months ago", verified: true, type: "Dine in" },
+            { name: "jujuji", rating: 4, text: "I've visited Kwatog's Molino twice, and overall, it's a decent spot for affordable comfort food. The place is clean and the service is good — friendly and attentive staff.", date: "6 months ago", verified: true, type: "Dine in" },
+            { name: "Maria R.", rating: 4, text: "Sulit na sulit! Ang sarap ng sisig nila. Babalik kami next time.", date: "3 months ago", verified: false, type: "Takeout" }
+        ];
+
+        function renderMenu(category = "all") {
+            const filtered = category === "all" ? menuItems : menuItems.filter(item => item.category === category);
+            const grid = document.getElementById("menuGrid");
+            grid.innerHTML = filtered.map(item => `
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <span class="menu-badge">${item.badge || "Affordable"}</span>
+                        <span style="font-size: 3rem;">${item.icon}</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>${item.name} <span class="price">₱${item.price}</span></h3>
+                        <p>${item.description}</p>
+                        <div style="display: flex; justify-content: flex-end;">
+                            <button class="add-btn" onclick="alert('Order via call or FB: 0919 451 6030')">+ Order</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderFeatured() {
+            const grid = document.getElementById("featuredGrid");
+            grid.innerHTML = featuredDishes.map(dish => `
+                <div class="featured-card">
+                    <div class="featured-icon">${dish.icon}</div>
+                    <h3>${dish.name}</h3>
+                    <p>${dish.description}</p>
+                    <div class="featured-price">${dish.price}</div>
+                </div>
+            `).join('');
+        }
+
+        function renderReviews() {
+            const grid = document.getElementById("reviewsGrid");
+            grid.innerHTML = reviewsList.map(review => `
+                <div class="review-card">
+                    <div class="stars">
+                        ${'★'.repeat(review.rating)}${'☆'.repeat(5-review.rating)}
+                        <span class="rating-badge">${review.type}</span>
+                    </div>
+                    <p class="review-text">"${review.text}"</p>
+                    <div class="reviewer">
+                        ${review.name} <span>• ${review.date}</span>
+                        ${review.verified ? '<span style="color:#2ecc71;"> ✓ Verified</span>' : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Category filter
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderMenu(btn.dataset.category);
+            });
+        });
+
+        // Modal functions
+        function openModal() {
+            document.getElementById('orderModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('orderModal').classList.remove('active');
+        }
+
+        // Event listeners
+        document.getElementById('heroOrderBtn')?.addEventListener('click', openModal);
+        document.getElementById('orderNavBtn')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal();
+        });
+
+        // Close modal on outside click
+        window.onclick = (event) => {
+            const modal = document.getElementById('orderModal');
+            if (event.target === modal) closeModal();
+        };
+
+        // Initialize
+        renderMenu();
+        renderFeatured();
+        renderReviews();
+    </script>
+</body>
+</html>
