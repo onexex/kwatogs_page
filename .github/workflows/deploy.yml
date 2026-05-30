@@ -1,0 +1,23 @@
+name: Deploy Static Subdomain
+
+on:
+  push:
+    branches:
+      - main  # Kung "master" ang tawag sa default branch mo, palitan mo ito ng master
+
+jobs:
+  web-deploy:
+    name: 🚀 Deploy HTML via FTP
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: 📂 Sync files to GoDaddy via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        dangerous-clean-html: false
