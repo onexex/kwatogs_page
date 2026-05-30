@@ -3,7 +3,7 @@ name: Deploy Static Subdomain
 on:
   push:
     branches:
-      - main  # Kung "master" ang tawag sa default branch mo, palitan mo ito ng master
+      - main  # Kung "master" ang tawag sa default branch mo, palitan mo ito ng master sdsdsd
 
 jobs:
   web-deploy:
